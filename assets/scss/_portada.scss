@@ -1,0 +1,21 @@
+
+.portada {
+    height: 450px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada{
+    p{
+        font-family: 'Gambarino-Regular';
+        font-size: 60px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    img {
+        height: 580px;
+        width: 580px;
+    }
+}

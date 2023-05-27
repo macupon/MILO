@@ -1,0 +1,51 @@
+@import "footerportada.scss";
+@import "index.scss";
+@import "aboutus.scss";
+@import "howtoorder.scss";
+@import "contactus.scss";
+@import "reset.scss";
+@import "colores.scss";
+@import "galeria.scss";
+@import "navbar.scss";
+@import "portada.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('gambarino.css');
+
+@font-face {
+    font-family: 'Gambarino-Regular';
+    src: url('../fonts/Gambarino-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+
+
+$colores:(
+    primario:rgb(240, 248, 255),
+    secundario: rgb(255, 255, 255),
+    terciario: rgb(255, 235, 205)
+);
+@each $color , $var in $colores {
+    .btn-#{$color}{
+        @extend .btn;
+        background-color: $var;
+    }
+};
+
+$botones:(
+    fuente:'Lato' sans-serif,
+    padding: 10px 15px,
+    radio:5px
+); 
+@mixin propbtn($margen,$colorLetra) {
+    margin: $margen;
+    color: $colorLetra;
+}
+.btn {
+    font-family: map-get($botones , fuente );
+    padding: map-get($botones , padding );
+    border-radius: map-get($botones , radio ); 
+    @include propbtn(20px,rgb(0, 0, 0) );
+}
+

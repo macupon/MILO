@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("gambarino.css");
+footer {
+  height: auto;
+  width: 110%;
+  padding-top: 15px;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(219, 234, 238);
+}
+
+.footer-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1rem;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social li {
+  margin: 0 10px;
+}
+.social li img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.portada1 {
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.41);
+}
+
+body {
+  top: 0px;
+  overflow-x: hidden;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.gallery {
+  margin: 40px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-auto-rows: minmax(140px, auto);
+  grid-gap: 20px;
+  justify-content: center;
+  grid-template-areas: "a a   b b  c c" "a a   b b  c c" "d d   e e  c c" "d d   e e  c c";
+}
+.gallery:hover .block {
+  transform: scale(0.95);
+}
+.gallery .block {
+  background: #bebebe;
+  position: relative;
+  overflow: hidden;
+}
+.gallery .block img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.gallery .block:hover {
+  transform: scale(1);
+}
+.gallery .block:nth-child(1) {
+  grid-area: a;
+}
+.gallery .block:nth-child(2) {
+  grid-area: b;
+}
+.gallery .block:nth-child(3) {
+  grid-area: c;
+}
+.gallery .block:nth-child(4) {
+  grid-area: d;
+}
+.gallery .block:nth-child(5) {
+  grid-area: e;
+}
+
+.img_index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_index img {
+  border-radius: 50%;
+  padding: 30px;
+  width: 450px;
+  height: 450px;
+}
+
+.index_pic_margin {
+  padding-bottom: 150px;
+}
+
+.fotos img {
+  border-radius: 50%;
+  padding: 30px;
+  width: 340px;
+  height: 340px;
+}
+
+.imgzoom {
+  overflow: hidden;
+}
+
+.img1:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+body {
+  background-color: rgb(240, 248, 255);
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 30px;
+}
+
+.pp p {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.aboutus {
+  display: flex;
+  font-size: 19px;
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+}
+
+.aboutus-title {
+  font-size: 60px;
+  font-family: "bebas neue";
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.aboutus-img {
+  margin: 20px;
+}
+
+.cake_size_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.cake_size_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cake_size_flex p {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+}
+
+.size_cake {
+  width: 440px;
+  height: 550px;
+  margin: 30px;
+  border-top-left-radius: 270px;
+  border-top-right-radius: 270px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.titulos_menu {
+  text-align: center;
+}
+.titulos_menu h2 {
+  font-size: 100px;
+  font-family: "bebas neue";
+  font-weight: 70;
+}
+
+.sponge_div_div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sponge_div {
+  height: 430px;
+  width: 80%;
+  background-color: #d5e3f6;
+  border-radius: 10px;
+  border-top-right-radius: 240px;
+  border-bottom-right-radius: 240px;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+}
+
+.menu_titles {
+  font-family: "bebas neue";
+  margin-top: -40px;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title_sabores_div {
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sabores_div {
+  margin-left: 80px;
+  display: flex;
+  font-size: 25px;
+}
+
+.img_card_menu {
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 15px;
+}
+.img_card_menu img {
+  height: 390px;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+.icon_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px 0px 20px;
+}
+.icon_text p {
+  font-size: 30px;
+  opacity: 60%;
+  font-family: "bebas neue";
+  margin-top: 10px;
+}
+
+.sponge {
+  margin: 0px 30px 0px 30px;
+}
+
+.icon_flavor {
+  opacity: 60%;
+  width: 90px;
+  height: 90px;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+}
+#cards h5 {
+  font-family: "bebas neue";
+  font-size: 30px;
+}
+#cards .card {
+  width: 324px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin: 10px;
+}
+#cards .card img {
+  padding-top: 14px;
+}
+#cards .card label {
+  display: block;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.titulos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+.titulos h1 {
+  font-size: 60px;
+  font-family: "bebas neue";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.titulos h2 {
+  font-size: 60px;
+  font-family: "bebas neue";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ppp {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.containerbutton {
+  text-align: center;
+}
+
+.btn, .btn-terciario, .btn-secundario, .btn-primario {
+  border: 2px solid #c44569;
+  background-color: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1:hover {
+  color: #fff;
+}
+
+.btn::before, .btn-terciario::before, .btn-secundario::before, .btn-primario::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #c44569;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before {
+  height: 180%;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.delivery h1 {
+  color: #000000;
+  font-family: "bebas neue";
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.buttons {
+  padding: 8px;
+  margin-left: 20px;
+  border-radius: 4px;
+  position: relative;
+  width: fit-content;
+}
+.buttons input {
+  appearance: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px 10px;
+  background: #a5b1c2;
+  color: #ececec;
+  font-size: 18px;
+  font-family: "lato", sans-serif;
+  transition: all 0.1s;
+}
+
+.buttons input:checked {
+  background: #cf6a87;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0px #808080;
+}
+
+.buttons input::before {
+  content: attr(label);
+  text-align: center;
+}
+
+.contact-form-wrapper {
+  padding: 100px 0;
+}
+
+.contact-form {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form textarea .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+.contact-form textarea .form-text-area .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+.contact-form textarea .form-text-area .form-control::placeholder .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+.contact-form textarea .form-text-area .form-control::placeholder .form-control:-ms-input-placeholder .form-control:focus {
+  border-color: #c44569;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.contact-form .title {
+  font-family: "bebas neue";
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.contact-form .description {
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  background-color: #c44569;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #d30069;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#galeria {
+  display: flex;
+}
+#galeria img {
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.logo img {
+  bottom: -120px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+}
+
+.face,
+.ig {
+  margin-right: 5px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  margin: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.portada {
+  height: 450px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada p {
+  font-family: "Gambarino-Regular";
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+}
+.portada img {
+  height: 580px;
+  width: 580px;
+}
+
+@font-face {
+  font-family: "Gambarino-Regular";
+  src: url("../fonts/Gambarino-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+.btn-primario {
+  background-color: rgb(240, 248, 255);
+}
+
+.btn-secundario {
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-terciario {
+  background-color: rgb(255, 235, 205);
+}
+
+.btn, .btn-primario, .btn-secundario, .btn-terciario {
+  font-family: "Lato" sans-serif;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+}

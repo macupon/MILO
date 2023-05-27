@@ -1,0 +1,239 @@
+.cake_size_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.cake_size_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cake_size_flex p {
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+}
+.size_cake {
+    width: 440px;
+    height: 550px;
+    margin: 30px;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 270px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+///////////////////////////////////////////////////////
+.titulos_menu {
+    text-align: center;
+    h2{
+        font-size: 100px;
+        font-family: "bebas neue";
+        font-weight: 70;
+    }
+    
+    
+}
+.sponge_div_div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.sponge_div {
+    height: 430px;
+    width: 80%;
+    background-color: #d5e3f6;
+    border-radius: 10px;
+    border-top-right-radius: 240px;
+    border-bottom-right-radius: 240px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+.menu_titles {
+    font-family: 'bebas neue';
+    margin-top: -40px;
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.title_sabores_div {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.sabores_div {
+    margin-left: 80px;
+    display: flex;
+    font-size: 25px;
+}
+.img_card_menu {
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 15px;
+    img {
+        height: 390px;
+        border-bottom-left-radius: 30%;
+        border-top-right-radius: 30%;
+    }
+}
+.icon_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
+    p{
+        font-size: 30px;
+        opacity: 60%;
+        font-family: 'bebas neue';
+        margin-top: 10px;
+    }
+}
+.sponge {
+    margin: 0px 30px 0px 30px;
+}
+.icon_flavor {
+    opacity: 60%;
+    width: 90px;
+    height: 90px;
+}
+/////////////////////////////////////////////
+#cards {
+    display: flex;
+    justify-content: center;
+    h5 {
+        font-family: 'bebas neue';
+        font-size: 30px;
+    }
+    .card {
+        width: 324px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        margin: 10px;
+        img {
+            padding-top: 14px;
+        }
+        label {
+            display: block;
+        }
+    }
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+
+.label {
+    font-size: 18px;
+}
+
+.titulos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    h1 {
+        font-size: 60px;
+        font-family: 'bebas neue';
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 60px;
+        font-family: 'bebas neue';
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.ppp {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+   
+}
+.containerbutton {
+    text-align: center;
+}
+.btn {
+    border: 2px solid #c44569;
+    background-color: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1:hover {
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #c44569;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before {
+    height: 180%;
+}
+.delivery{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    h1 {
+        color: #000000;
+        font-family: 'bebas neue';
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}
+.buttons {
+    padding: 8px;
+    margin-left: 20px;
+    border-radius: 4px;
+    position: relative;
+    width: fit-content;
+    input {
+        appearance: none;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 10px 10px;
+        background: #a5b1c2;
+        color: #ececec;
+        font-size: 18px;
+        font-family: 'lato', sans-serif;
+        transition: all 0.1s;
+      }
+  }
+
+  .buttons input:checked {
+    background: #cf6a87;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0px #808080;
+  }
+
+  .buttons input::before {
+    content: attr(label);
+    text-align: center;
+  }
+
+  

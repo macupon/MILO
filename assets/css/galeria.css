@@ -1,0 +1,9 @@
+#galeria {
+  display: flex;
+}
+#galeria img {
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
