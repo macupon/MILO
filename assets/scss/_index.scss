@@ -6,6 +6,7 @@ body {
     max-width: 100%;
     min-height: 100vh;
     position: relative;
+    background-color: $colorfondo;
 }
 $block_height: 140px;
 .gallery {
@@ -64,10 +65,14 @@ $block_height: 140px;
     justify-content: center;
     align-items: center;
     img{
+        background-color: #e1ecf9;
+        background-size: contain;
         border-radius: 50%;
-        padding: 30px;
+        padding: 13px;
         width: 450px;
         height: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 // .index_pic {
@@ -83,30 +88,6 @@ $block_height: 140px;
 //     margin: 10px;
 // }
 
-.index_pic_margin {
-    padding-bottom: 150px;
-}
-
-.fotos {
-    img {
-    border-radius: 50%;
-    padding: 30px;
-    width: 340px;
-    height: 340px;
-    }
-}
-.imgzoom {
-    overflow: hidden;
-}
-.img1 {
-    &:hover {
-    transform: scale(1.1);
-    transition: all 1s;
-    }
-}
-body {
-    background-color: $colorfondo;
-}
 
 .home {
     display: flex;
@@ -120,6 +101,38 @@ body {
     justify-content: center;
     font-family: 'Lato', sans-serif;
     margin-top: 5px;
-    font-size: 25px;
+    font-size: 30px;
     }
+}
+.aboutus_div {
+    width: 100%;
+    height: 700px;
+    background-color: #e1ecf9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.aboutus-title {
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.aboutus_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    text-align:justify;
+    
+}
+.about_img {
+    width: 650px;
+    height: 650px;
 }

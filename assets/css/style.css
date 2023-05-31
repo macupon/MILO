@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("gambarino.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Montserrat:wght@200&family=Prompt:wght@200&family=Rubik:ital,wght@1,300&display=swap");
 footer {
   height: auto;
   width: 110%;
@@ -50,6 +51,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   position: relative;
+  background-color: rgb(240, 248, 255);
 }
 
 .gallery {
@@ -101,34 +103,14 @@ body {
   align-items: center;
 }
 .img_index img {
+  background-color: #e1ecf9;
+  background-size: contain;
   border-radius: 50%;
-  padding: 30px;
+  padding: 13px;
   width: 450px;
   height: 450px;
-}
-
-.index_pic_margin {
-  padding-bottom: 150px;
-}
-
-.fotos img {
-  border-radius: 50%;
-  padding: 30px;
-  width: 340px;
-  height: 340px;
-}
-
-.imgzoom {
-  overflow: hidden;
-}
-
-.img1:hover {
-  transform: scale(1.1);
-  transition: all 1s;
-}
-
-body {
-  background-color: rgb(240, 248, 255);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .home {
@@ -143,7 +125,42 @@ body {
   justify-content: center;
   font-family: "Lato", sans-serif;
   margin-top: 5px;
+  font-size: 30px;
+}
+
+.aboutus_div {
+  width: 100%;
+  height: 700px;
+  background-color: #e1ecf9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.aboutus-title {
+  font-family: "Caveat", cursive;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aboutus_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+  height: 400px;
   font-size: 25px;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+
+.about_img {
+  width: 650px;
+  height: 650px;
 }
 
 .aboutus {
@@ -151,16 +168,6 @@ body {
   font-size: 19px;
   font-family: "Lato", sans-serif;
   margin-left: 20px;
-}
-
-.aboutus-title {
-  font-size: 60px;
-  font-family: "bebas neue";
-  font-weight: 700;
-  position: relative;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 20px;
 }
 
 .aboutus-img {
@@ -183,12 +190,12 @@ body {
 
 .cake_size_flex p {
   font-family: "Lato", sans-serif;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .size_cake {
-  width: 440px;
-  height: 550px;
+  width: 400px;
+  height: 500px;
   margin: 30px;
   border-top-left-radius: 270px;
   border-top-right-radius: 270px;
@@ -202,7 +209,7 @@ body {
 .titulos_menu h2 {
   font-size: 100px;
   font-family: "bebas neue";
-  font-weight: 70;
+  font-weight: 60;
 }
 
 .sponge_div_div {
@@ -261,22 +268,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 15px 0px 5px;
 }
 .icon_text p {
-  font-size: 30px;
+  font-size: 18px;
   opacity: 60%;
   font-family: "bebas neue";
   margin-top: 10px;
 }
 
 .sponge {
-  margin: 0px 30px 0px 30px;
+  margin: 0px 25px 0px 25px;
+}
+.sponge p {
+  font-size: 25px;
 }
 
 .icon_flavor {
   opacity: 60%;
-  width: 90px;
+  width: 80px;
   height: 90px;
 }
 
@@ -528,22 +538,40 @@ body {
 }
 
 .portada {
-  height: 450px;
+  height: 550px;
   display: flex;
   width: 100%;
-  justify-content: center;
   align-items: center;
+  background-color: #e1eaf7;
 }
 
 .portada p {
-  font-family: "Gambarino-Regular";
-  font-size: 60px;
+  font-family: "bebas neue";
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center;
+  height: 300px;
+  width: 400px;
+}
+.portada img {
+  margin-bottom: 50px;
+  margin-top: 150px;
+  height: 670px;
+  width: 1000px;
+  z-index: 10;
+}
+.portada h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
   font-weight: bolder;
   text-align: center;
 }
-.portada img {
-  height: 580px;
-  width: 580px;
+.portada .lorem_div {
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @font-face {

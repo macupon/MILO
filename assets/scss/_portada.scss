@@ -1,21 +1,40 @@
 
 .portada {
-    height: 450px;
+    height: 550px;
     display: flex;
     width: 100%;
-    justify-content: center;
     align-items: center;
+    background-color: #e1eaf7;
 }
 
 .portada{
+
     p{
-        font-family: 'Gambarino-Regular';
-        font-size: 60px;
+        font-family: "bebas neue";
+        font-size: 70px;
+        font-weight: bolder;
+        text-align: center;
+        height: 300px;
+        width: 400px;
+    }
+    img {
+        margin-bottom: 50px;
+        margin-top: 150px;
+        height: 670px;
+        width: 1000px;
+        z-index: 10;
+    }
+    h3 {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
         font-weight: bolder;
         text-align: center;
     }
-    img {
-        height: 580px;
-        width: 580px;
+    .lorem_div {
+        margin-left: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
