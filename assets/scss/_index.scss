@@ -21,7 +21,7 @@ main {
     }
 }
 $block_height: 150px;
-.gallery {
+.gallery_index {
     width: 100%;
     height: auto;
     display: grid;
@@ -36,11 +36,11 @@ $block_height: 150px;
         "d d   e e  f f"
     ;
     &:hover {
-        .block {
+        .block_index {
             transform:scale(.95);
         }
     }
-    .block {
+    .block_index {
         background: #bebebe;
         position: relative;
         overflow: hidden;
@@ -50,7 +50,6 @@ $block_height: 150px;
             display: block;
             margin: 0 auto; 
          }
-
         &:hover {
             transform: scale(1);
         }
