@@ -1,25 +1,25 @@
-
-
-
-.logo {
-   img {
-    bottom: -120px;
-    position: absolute;
-    height: 150px;
-    width: 150px;
-   }
-  }
-
-.face,
-.ig {
-    margin-right: 5px;
-}
-
-.nav-item {
-    a{
-        font-size: 18px;
-        margin: 15px;
-        font-family:'Lato', sans-serif;
+.navbar{
+    .face,
+    .ig {
+        margin-right: 5px;
     }
-    
+    .navbar_center {
+        z-index: 20;
+        color: black;
+    }
+    .nav-item {
+        a{
+            font-size: 18px;
+            margin: 15px;
+            font-family:'Lato', sans-serif;
+        }
+    }
 }
+#navbarNav {
+    display: flex;
+    justify-content: start;
+}
+
+
+    
+

@@ -49,20 +49,31 @@ body {
   top: 0px;
   overflow-x: hidden;
   max-width: 100%;
-  min-height: 100vh;
   position: relative;
   background-color: rgb(240, 248, 255);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ourproduct h1 {
+  margin-top: 100px;
+}
+
 .gallery {
-  margin: 40px 0;
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-auto-rows: minmax(140px, auto);
-  grid-gap: 20px;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 17px;
   justify-content: center;
-  grid-template-areas: "a a   b b  c c" "a a   b b  c c" "d d   e e  c c" "d d   e e  c c";
+  grid-template-areas: "a a   b b  c c" "a a   b b  c c" "d d   e e  f f" "d d   e e  f f";
 }
 .gallery:hover .block {
   transform: scale(0.95);
@@ -96,6 +107,9 @@ body {
 .gallery .block:nth-child(5) {
   grid-area: e;
 }
+.gallery .block:nth-child(6) {
+  grid-area: f;
+}
 
 .img_index {
   display: flex;
@@ -107,30 +121,23 @@ body {
   background-size: contain;
   border-radius: 50%;
   padding: 13px;
-  width: 450px;
-  height: 450px;
+  width: 380px;
+  height: 380px;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.home {
-  display: flex;
-  justify-content: center;
-  font-family: "Lato", sans-serif;
-  margin-top: 30px;
 }
 
 .pp p {
   display: flex;
   justify-content: center;
   font-family: "Lato", sans-serif;
-  margin-top: 5px;
-  font-size: 30px;
+  font-size: 25px;
+  padding-bottom: 20px;
 }
 
 .aboutus_div {
-  width: 100%;
-  height: 700px;
+  width: 100vw;
+  height: 550px;
   background-color: #e1ecf9;
   display: flex;
   align-items: center;
@@ -141,9 +148,9 @@ body {
 
 .aboutus-title {
   font-family: "Caveat", cursive;
-  font-size: 80px;
+  font-size: 65px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .aboutus_text {
@@ -151,16 +158,20 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 800px;
+  width: 600px;
   height: 400px;
-  font-size: 25px;
+  font-size: 18px;
   font-family: "Lato", sans-serif;
   text-align: justify;
+  padding: 25px;
 }
 
 .about_img {
-  width: 650px;
-  height: 650px;
+  border-style: solid;
+  margin: 1px;
+  border-color: #bebebe;
+  width: 430px;
+  height: 450px;
 }
 
 .aboutus {
@@ -172,6 +183,20 @@ body {
 
 .aboutus-img {
   margin: 20px;
+}
+
+.milo_title_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 80%;
+}
+.milo_title_div p {
+  font-family: "Caveat", cursive;
+  position: absolute;
+  font-size: 100px;
+  margin-top: -80px;
 }
 
 .cake_size_div {
@@ -194,8 +219,8 @@ body {
 }
 
 .size_cake {
-  width: 400px;
-  height: 500px;
+  width: 370px;
+  height: 450px;
   margin: 30px;
   border-top-left-radius: 270px;
   border-top-right-radius: 270px;
@@ -216,11 +241,12 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  height: 430px;
+  width: 1000px;
 }
 
 .sponge_div {
-  height: 430px;
-  width: 80%;
+  width: 100%;
   background-color: #d5e3f6;
   border-radius: 10px;
   border-top-right-radius: 240px;
@@ -247,14 +273,14 @@ body {
 }
 
 .sabores_div {
-  margin-left: 80px;
+  margin-left: 140px;
   display: flex;
   font-size: 25px;
 }
 
 .img_card_menu {
   position: absolute;
-  margin-left: -100px;
+  margin-left: -115px;
   margin-top: 15px;
 }
 .img_card_menu img {
@@ -288,148 +314,6 @@ body {
   opacity: 60%;
   width: 80px;
   height: 90px;
-}
-
-#cards {
-  display: flex;
-  justify-content: center;
-}
-#cards h5 {
-  font-family: "bebas neue";
-  font-size: 30px;
-}
-#cards .card {
-  width: 324px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  margin: 10px;
-}
-#cards .card img {
-  padding-top: 14px;
-}
-#cards .card label {
-  display: block;
-}
-
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2px;
-}
-
-.label {
-  font-size: 18px;
-}
-
-.titulos {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 45px;
-}
-.titulos h1 {
-  font-size: 60px;
-  font-family: "bebas neue";
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.titulos h2 {
-  font-size: 60px;
-  font-family: "bebas neue";
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.ppp {
-  display: flex;
-  justify-content: center;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-}
-
-.containerbutton {
-  text-align: center;
-}
-
-.btn, .btn-terciario, .btn-secundario, .btn-primario {
-  border: 2px solid #c44569;
-  background-color: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "Lato", sans-serif;
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn1:hover {
-  color: #fff;
-}
-
-.btn::before, .btn-terciario::before, .btn-secundario::before, .btn-primario::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #c44569;
-  z-index: -1;
-  transition: 0.8s;
-}
-
-.btn1::before {
-  top: 0;
-  border-radius: 0 0 50% 50%;
-}
-
-.btn1:hover::before {
-  height: 180%;
-}
-
-.delivery {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-}
-.delivery h1 {
-  color: #000000;
-  font-family: "bebas neue";
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 20px;
-}
-
-.buttons {
-  padding: 8px;
-  margin-left: 20px;
-  border-radius: 4px;
-  position: relative;
-  width: fit-content;
-}
-.buttons input {
-  appearance: none;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 10px 10px;
-  background: #a5b1c2;
-  color: #ececec;
-  font-size: 18px;
-  font-family: "lato", sans-serif;
-  transition: all 0.1s;
-}
-
-.buttons input:checked {
-  background: #cf6a87;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  text-shadow: 0 1px 0px #808080;
-}
-
-.buttons input::before {
-  content: attr(label);
-  text-align: center;
 }
 
 .contact-form-wrapper {
@@ -519,59 +403,64 @@ body {
   border-radius: 10%;
 }
 
-.logo img {
-  bottom: -120px;
-  position: absolute;
-  height: 150px;
-  width: 150px;
-}
-
-.face,
-.ig {
+.navbar .face,
+.navbar .ig {
   margin-right: 5px;
 }
-
-.nav-item a {
+.navbar .navbar_center {
+  z-index: 20;
+  color: black;
+}
+.navbar .nav-item a {
   font-size: 18px;
   margin: 15px;
   font-family: "Lato", sans-serif;
 }
 
-.portada {
-  height: 550px;
+#navbarNav {
   display: flex;
-  width: 100%;
-  align-items: center;
-  background-color: #e1eaf7;
+  justify-content: start;
 }
 
-.portada p {
-  font-family: "bebas neue";
-  font-size: 70px;
-  font-weight: bolder;
-  text-align: center;
-  height: 300px;
-  width: 400px;
-}
-.portada img {
-  margin-bottom: 50px;
-  margin-top: 150px;
-  height: 670px;
-  width: 1000px;
-  z-index: 10;
-}
-.portada h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
+.portada {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .portada .lorem_div {
-  margin-left: 60px;
+  top: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.portada img {
+  opacity: 40%;
+  position: absolute;
+  z-index: 0;
+}
+.portada h1 {
+  font-family: "Caveat", cursive;
+  font-size: 180px;
+  z-index: 10;
+  opacity: 90%;
+  margin-top: 90px;
+  margin-bottom: 0px;
+}
+.portada p {
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: #000000;
+  opacity: 90%;
+  z-index: 10;
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 @font-face {
@@ -599,4 +488,24 @@ body {
   border-radius: 5px;
   margin: 20px;
   color: rgb(0, 0, 0);
+}
+
+.titulos {
+  display: flex;
+  justify-content: center;
+}
+.titulos h1 {
+  font-size: 60px;
+  font-family: "bebas neue";
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.titulos h2 {
+  font-size: 60px;
+  font-family: "bebas neue";
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 20px;
 }
