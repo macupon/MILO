@@ -4,21 +4,29 @@ $block_height: 100px;
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(12, auto);
     grid-auto-rows: minmax($block_height, auto);
     grid-gap: 10px;
     justify-content: center;
     grid-template-areas:
-        "a a   b b  c c"
-        "a a   b b  c c"
-        "d d   e e  f f"
-        "d d   e e  f f"
-        "g g   h h  i i"
-        "g g   h h  i i"
-        "j j   k k  l l"
-        "j j   k k  l l"
-        "m m   n n  o o"
-        "m m   n n  o o"
+        "a a a a  b b b b  c c c c"
+        "a a a a  b b b b  c c c c"
+        "a a a a  b b b b  c c c c"
+        "d d d d  e e e e  f f f f"
+        "d d d d  e e e e  f f f f"
+        "d d d d  e e e e  f f f f"
+        "g g g g  h h h h  i i i i"
+        "g g g g  h h h h  i i i i"
+        "g g g g  h h h h  i i i i"
+        "j j j j  k k k k  l l l l"
+        "j j j j  k k k k  l l l l"
+        "j j j j  k k k k  l l l l"
+        "m m m m  n n n n  o o o o"
+        "m m m m  n n n n  o o o o"
+        "m m m m  n n n n  o o o o"
+        "p p p p  q q q q  r r r r"
+        "p p p p  q q q q  r r r r"
+        "p p p p  q q q q  r r r r"
     ;
     &:hover {
         .block {
@@ -30,8 +38,8 @@ $block_height: 100px;
         position: relative;
         overflow: hidden;
          img{
-            width: 100%;
-            height: 100%;
+            // width: 100%;
+            // height: 100%;
             display: block;
             margin: 0 auto; 
          }
@@ -82,6 +90,15 @@ $block_height: 100px;
         }
         &:nth-child(15){
             grid-area: o;
+        }
+        &:nth-child(16){
+            grid-area: p;
+        }
+        &:nth-child(17){
+            grid-area: q;
+        }
+        &:nth-child(18){
+            grid-area: r;
         }
     }
 }

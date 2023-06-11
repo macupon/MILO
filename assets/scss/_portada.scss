@@ -1,6 +1,6 @@
 
 .portada{
-    width: 100%;
+    width: 100vw;
     height: 200px;
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@
         align-items: center;
     }
     img {
+        width: 100vw;
         opacity: 40%;
         position: absolute;
         z-index: 0;

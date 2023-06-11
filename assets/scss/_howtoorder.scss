@@ -5,10 +5,11 @@
     position: relative;
     opacity: 80%;
     p{
-        font-family: 'Caveat', cursive;
+        // font-family: 'Caveat', cursive;
+        font-family: 'Sacramento', cursive;
         position: absolute;
         font-size: 100px;
-        margin-top: -80px;
+        margin-top: -60px;
     }
 }
 
@@ -47,14 +48,12 @@
     }
 }
 .sponge_div_div {
-    display: flex;
-    justify-content: center;
+    margin-left: 90px;
     margin-bottom: 30px;
     height: 430px;
     width: 1000px;
 }
 .sponge_div {
-
     width: 100%;
     background-color: #d5e3f6;
     border-radius: 10px;
@@ -66,18 +65,21 @@
 }
 
 .menu_titles {
-    font-family: 'bebas neue';
-    margin-top: -40px;
-    font-size: 75px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content:center;
+        p{
+        font-family: "Lato", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 }
 .title_sabores_div {
     height: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:center;
 }
 .sabores_div {
     margin-left: 140px;
@@ -86,7 +88,7 @@
 }
 .img_card_menu {
     position: absolute;
-    margin-left: -115px;
+    margin-left: -145px;
     margin-top: 15px;
     img {
         height: 390px;

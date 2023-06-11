@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("gambarino.css");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Montserrat:wght@200&family=Prompt:wght@200&family=Rubik:ital,wght@1,300&display=swap");
 footer {
   height: auto;
@@ -66,28 +67,47 @@ main {
 }
 
 .gallery_index {
+  margin: 40px 0;
   width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 17px;
+  grid-auto-rows: minmax(100px, 0);
+  grid-gap: 10px;
   justify-content: center;
-  grid-template-areas: "a a   b b  c c" "a a   b b  c c" "d d   e e  f f" "d d   e e  f f";
+  grid-template-areas: "a a   b b  c c" "a a   b b  c c" "a a   b b  c c" "a a   b b  c c";
 }
 .gallery_index:hover .block_index {
   transform: scale(0.95);
 }
 .gallery_index .block_index {
-  background: #bebebe;
+  background: #f2f1f1;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 .gallery_index .block_index img {
-  width: 100%;
-  height: 100%;
   display: block;
-  margin: 0 auto;
+}
+.gallery_index .block_index:hover .content {
+  transform: translateY(0%) scale(1);
+  transform-origin: 0 0;
+  transition: transform 1s;
+}
+.gallery_index .block_index .content {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  padding: 24px;
+  transform: translateY(120%);
+}
+.gallery_index .block_index .content .h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  text-align: center;
 }
 .gallery_index .block_index:hover {
   transform: scale(1);
@@ -100,15 +120,6 @@ main {
 }
 .gallery_index .block_index:nth-child(3) {
   grid-area: c;
-}
-.gallery_index .block_index:nth-child(4) {
-  grid-area: d;
-}
-.gallery_index .block_index:nth-child(5) {
-  grid-area: e;
-}
-.gallery_index .block_index:nth-child(6) {
-  grid-area: f;
 }
 
 .img_index {
@@ -135,6 +146,16 @@ main {
   padding-bottom: 20px;
 }
 
+.piedefoto_index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.piedefoto_index p {
+  margin-top: 5px;
+}
+
 .aboutus_div {
   width: 100vw;
   height: 550px;
@@ -143,7 +164,7 @@ main {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .aboutus-title {
@@ -193,10 +214,10 @@ main {
   opacity: 80%;
 }
 .milo_title_div p {
-  font-family: "Caveat", cursive;
+  font-family: "Sacramento", cursive;
   position: absolute;
   font-size: 100px;
-  margin-top: -80px;
+  margin-top: -60px;
 }
 
 .cake_size_div {
@@ -238,8 +259,7 @@ main {
 }
 
 .sponge_div_div {
-  display: flex;
-  justify-content: center;
+  margin-left: 90px;
   margin-bottom: 30px;
   height: 430px;
   width: 1000px;
@@ -257,9 +277,12 @@ main {
 }
 
 .menu_titles {
-  font-family: "bebas neue";
-  margin-top: -40px;
-  font-size: 75px;
+  display: flex;
+  justify-content: center;
+}
+.menu_titles p {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -269,7 +292,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .sabores_div {
@@ -280,7 +303,7 @@ main {
 
 .img_card_menu {
   position: absolute;
-  margin-left: -115px;
+  margin-left: -145px;
   margin-top: 15px;
 }
 .img_card_menu img {
@@ -398,11 +421,11 @@ main {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(12, auto);
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 10px;
   justify-content: center;
-  grid-template-areas: "a a   b b  c c" "a a   b b  c c" "d d   e e  f f" "d d   e e  f f" "g g   h h  i i" "g g   h h  i i" "j j   k k  l l" "j j   k k  l l" "m m   n n  o o" "m m   n n  o o";
+  grid-template-areas: "a a a a  b b b b  c c c c" "a a a a  b b b b  c c c c" "a a a a  b b b b  c c c c" "d d d d  e e e e  f f f f" "d d d d  e e e e  f f f f" "d d d d  e e e e  f f f f" "g g g g  h h h h  i i i i" "g g g g  h h h h  i i i i" "g g g g  h h h h  i i i i" "j j j j  k k k k  l l l l" "j j j j  k k k k  l l l l" "j j j j  k k k k  l l l l" "m m m m  n n n n  o o o o" "m m m m  n n n n  o o o o" "m m m m  n n n n  o o o o" "p p p p  q q q q  r r r r" "p p p p  q q q q  r r r r" "p p p p  q q q q  r r r r";
 }
 .gallery:hover .block {
   transform: scale(0.95);
@@ -413,8 +436,6 @@ main {
   overflow: hidden;
 }
 .gallery .block img {
-  width: 100%;
-  height: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -466,6 +487,15 @@ main {
 .gallery .block:nth-child(15) {
   grid-area: o;
 }
+.gallery .block:nth-child(16) {
+  grid-area: p;
+}
+.gallery .block:nth-child(17) {
+  grid-area: q;
+}
+.gallery .block:nth-child(18) {
+  grid-area: r;
+}
 
 .navbar .face,
 .navbar .ig {
@@ -487,7 +517,7 @@ main {
 }
 
 .portada {
-  width: 100%;
+  width: 100vw;
   height: 200px;
   display: flex;
   align-items: center;
@@ -504,6 +534,7 @@ main {
   align-items: center;
 }
 .portada img {
+  width: 100vw;
   opacity: 40%;
   position: absolute;
   z-index: 0;
@@ -563,13 +594,13 @@ main {
   font-family: "bebas neue";
   font-weight: 600;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 .titulos h2 {
   font-size: 60px;
   font-family: "bebas neue";
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 40px;
 }
