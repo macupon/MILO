@@ -1,7 +1,8 @@
 .navbar{
     .face,
     .ig {
-        margin-right: 5px;
+        z-index: 30;
+        cursor: pointer;
     }
     .navbar_center {
         z-index: 20;

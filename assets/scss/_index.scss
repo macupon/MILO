@@ -1,5 +1,6 @@
 $colorfondo: rgb(240, 248, 255);
 $colorborde: rgb(255, 235, 205);
+
 body {
     top: 0px;
     overflow-x: hidden;
@@ -15,21 +16,14 @@ main {
     align-items: center;
     position: relative;
 }
-.ourproduct {
-    h1 {
-        margin-top: 150px;
-        margin-bottom: -20px;
-    }
-}
-
-$block_height: 100px;
+$block_height: 90px;
 .gallery_index {
     margin: 20px 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-auto-rows: minmax($block_height, 0);
-    grid-gap: 10px;
+    grid-gap: 20px;
     justify-content: center;
     grid-template-areas:
         "a a   b b  c c"
@@ -43,13 +37,15 @@ $block_height: 100px;
         }
     }
     .block_index {
-        background: #f2f1f1;
         position: relative;
         overflow: hidden;
         background-size: cover;
         background-position: center;
         img{
             display: block;
+            border: #d2e1f3;
+            border-style: double;
+
          }
         &:hover{
             .content{
@@ -61,16 +57,17 @@ $block_height: 100px;
         .content{
            position: absolute;
            width: 100%;
-           background: rgb(255, 255, 255, .8);
+           background: rgba(234, 240, 242, 0.8);
            bottom: 0;
-           padding: 24px;
+           padding: 0px;
            transform: translateY(120%);
             .h2{
+                
+                line-height: 100%;
                 font-size: 30px;
-                font-weight: bold;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-weight: lighter;
+                font-family: "Courier New", Courier, monospace;
                 text-align: center;
+                font-style: to-upper-case($string: "");
             }
          }
 
@@ -132,7 +129,7 @@ $block_height: 100px;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 50px;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .aboutus-title {
     font-family: 'Caveat', cursive;

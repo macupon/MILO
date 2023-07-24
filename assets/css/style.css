@@ -62,18 +62,13 @@ main {
   position: relative;
 }
 
-.ourproduct h1 {
-  margin-top: 150px;
-  margin-bottom: -20px;
-}
-
 .gallery_index {
   margin: 20px 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-auto-rows: minmax(100px, 0);
-  grid-gap: 10px;
+  grid-auto-rows: minmax(90px, 0);
+  grid-gap: 20px;
   justify-content: center;
   grid-template-areas: "a a   b b  c c" "a a   b b  c c" "a a   b b  c c" "a a   b b  c c";
 }
@@ -81,7 +76,6 @@ main {
   transform: scale(0.95);
 }
 .gallery_index .block_index {
-  background: #f2f1f1;
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -89,6 +83,8 @@ main {
 }
 .gallery_index .block_index img {
   display: block;
+  border: #d2e1f3;
+  border-style: double;
 }
 .gallery_index .block_index:hover .content {
   transform: translateY(0%) scale(1);
@@ -98,17 +94,17 @@ main {
 .gallery_index .block_index .content {
   position: absolute;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(234, 240, 242, 0.8);
   bottom: 0;
-  padding: 24px;
+  padding: 0px;
   transform: translateY(120%);
 }
 .gallery_index .block_index .content .h2 {
+  line-height: 100%;
   font-size: 30px;
-  font-weight: bold;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: lighter;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
+  font-style: "";
 }
 .gallery_index .block_index:hover {
   transform: scale(1);
@@ -165,7 +161,7 @@ main {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 50px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .aboutus-title {
@@ -253,11 +249,6 @@ main {
 .titulos_menu {
   text-align: center;
 }
-.titulos_menu h2 {
-  font-size: 100px;
-  font-family: "bebas neue";
-  font-weight: 60;
-}
 
 .sponge_div_div {
   margin-left: 90px;
@@ -285,7 +276,6 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 30px;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .title_sabores_div {
@@ -500,7 +490,8 @@ main {
 
 .navbar .face,
 .navbar .ig {
-  margin-right: 5px;
+  z-index: 30;
+  cursor: pointer;
 }
 .navbar .navbar_center {
   z-index: 20;
@@ -519,44 +510,54 @@ main {
 
 .portada {
   width: 100vw;
-  height: 200px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
+  top: 0;
+}
+.portada .img_portada {
+  top: 0;
+  width: 100vw;
+  opacity: 50%;
+  position: absolute;
 }
 .portada .lorem_div {
-  top: 0;
-  width: 100%;
-  height: auto;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.portada img {
-  width: 100vw;
-  opacity: 40%;
-  position: absolute;
-  z-index: 0;
-}
-.portada h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 190px;
-  z-index: 10;
+.portada .lorem_div h1 {
+  font-family: "sacramento";
+  font-size: 250px;
+  z-index: 20;
   opacity: 90%;
-  margin-top: 90px;
-  margin-bottom: 0px;
+  margin-top: -10px;
+  line-height: 80%;
 }
-.portada p {
+.portada .lorem_div p {
   font-family: "Lato", sans-serif;
-  font-weight: bolder;
   color: #000000;
-  opacity: 90%;
-  z-index: 10;
-  font-size: 25px;
+  z-index: 20;
+  font-size: 28px;
   text-align: center;
-  font-weight: lighter;
+}
+
+.navbar-index {
+  z-index: 1;
+}
+.navbar-index .face,
+.navbar-index .ig {
+  z-index: 30;
+  cursor: pointer;
+  opacity: 85%;
+}
+.navbar-index .nav-item a {
+  font-size: 18px;
+  margin: 15px;
+  font-family: "Lato", sans-serif;
 }
 
 @font-face {
@@ -589,14 +590,6 @@ main {
 .titulos {
   display: flex;
   justify-content: center;
-}
-.titulos h1 {
-  font-size: 60px;
-  font-family: "bebas neue";
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-top: 100px;
-  padding-bottom: 20px;
 }
 .titulos h2 {
   font-size: 60px;
