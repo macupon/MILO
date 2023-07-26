@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("gambarino.css");
@@ -102,7 +103,8 @@ main {
 .gallery_index .block_index .content .h2 {
   line-height: 100%;
   font-size: 30px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inconsolata", sans-serif;
+  color: rgb(140, 138, 138);
   text-align: center;
   font-style: "";
 }
@@ -141,13 +143,16 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 25px;
   padding-bottom: 20px;
+  color: rgb(120, 118, 118);
 }
 
 .piedefoto_index {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: lighter;
+  color: rgb(140, 138, 138);
 }
 .piedefoto_index p {
   margin-top: 5px;
@@ -185,11 +190,44 @@ main {
 }
 
 .about_img {
-  border-style: solid;
   margin: 1px;
-  border-color: #bebebe;
   width: 430px;
   height: 450px;
+  border-radius: 18px;
+}
+
+.vegan-div {
+  display: flex;
+  width: 100vw;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 241, 241);
+}
+.vegan-div .vegan-img {
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+.vegan-div .vegan-img img {
+  width: 430px;
+  height: 517px;
+  border-radius: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.videoIndex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 550px;
+  height: 520px;
+}
+.videoIndex .video {
+  border-radius: 10%;
+  margin-top: 40px;
+  padding: 40px;
 }
 
 .aboutus {
@@ -237,6 +275,7 @@ main {
 }
 
 .size_cake {
+  box-shadow: none;
   width: 370px;
   height: 450px;
   margin: 30px;
@@ -244,6 +283,10 @@ main {
   border-top-right-radius: 270px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.size_cake_shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 .titulos_menu {
@@ -531,6 +574,7 @@ main {
 }
 .portada .lorem_div h1 {
   font-family: "sacramento";
+  color: rgb(44, 42, 42);
   font-size: 250px;
   z-index: 20;
   opacity: 90%;
@@ -539,7 +583,7 @@ main {
 }
 .portada .lorem_div p {
   font-family: "Lato", sans-serif;
-  color: #000000;
+  color: rgb(70, 67, 67);
   z-index: 20;
   font-size: 28px;
   text-align: center;
@@ -558,6 +602,53 @@ main {
   font-size: 18px;
   margin: 15px;
   font-family: "Lato", sans-serif;
+}
+
+:root {
+  --radius: 33vmin;
+  --frame-size: calc(var(--radius) / 3);
+  --d-outer: calc(var(--radius) * 2);
+  --d-inner: calc(var(--d-outer) - var(--frame-size));
+  --font-size: calc(var(--radius) / 10);
+}
+
+p {
+  font-size: var(--font-size);
+}
+
+.circle {
+  position: absolute;
+  width: var(--d-outer);
+  height: var(--d-outer);
+  border-radius: 50%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-family: "Inconsolata", sans-serif;
+  color: rgb(140, 138, 138);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.text p span {
+  position: absolute;
+  left: 50%;
+  font-size: 40px;
+  transform-origin: 0 var(--radius);
 }
 
 @font-face {
@@ -590,6 +681,7 @@ main {
 .titulos {
   display: flex;
   justify-content: center;
+  color: rgb(70, 67, 67);
 }
 .titulos h2 {
   font-size: 60px;

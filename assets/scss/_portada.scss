@@ -21,6 +21,7 @@
         align-items: center;
         h1 {
             font-family: "sacramento";
+            color: rgb(44, 42, 42);
             font-size: 250px;
             z-index: 20;
             opacity: 90%;
@@ -29,7 +30,8 @@
         }
         p{
             font-family: 'Lato', sans-serif;
-            color: #000000;
+            // font-family: "Inconsolata", sans-serif;
+            color: rgb(70, 67, 67);
             z-index: 20;
             font-size: 28px;
             text-align: center;

@@ -8,18 +8,20 @@
 @import "galeria.scss";
 @import "navbar.scss";
 @import "portada.scss";
+@import "animation.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('gambarino.css');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Montserrat:wght@200&family=Prompt:wght@200&family=Rubik:ital,wght@1,300&display=swap');
+
 // font-family: 'Bebas Neue', sans-serif;
 // font-family: 'Caveat', cursive;
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Prompt', sans-serif;
 // font-family: 'Rubik', sans-serif;
+// font-family: Inconsolata, sans-serif;
 
 @font-face {
     font-family: 'Gambarino-Regular';
@@ -61,6 +63,7 @@ $botones:(
 .titulos {
     display: flex;
     justify-content: center;
+    color: rgb(70, 67, 67);
     h2 {
         font-size: 60px;
         font-family: 'bebas neue';

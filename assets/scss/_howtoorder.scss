@@ -30,6 +30,7 @@
     font-size: 20px;
 }
 .size_cake {
+    box-shadow: none;
     width: 370px;
     height: 450px;
     margin: 30px;
@@ -37,6 +38,9 @@
     border-top-right-radius: 270px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+.size_cake_shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 ///////////////////////////////////////////////////////
 .titulos_menu {
@@ -114,6 +118,18 @@
     width: 80px;
     height: 90px;
 }
+
+// #sm:active {
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+// }
+// #md:active {
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+// }
+// #bg:active {
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+// }
+
+
 /////////////////////////////////////////////
 // #cards {
 //     display: flex;
