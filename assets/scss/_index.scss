@@ -15,7 +15,9 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 120px;
 }
+
 $block_height: 90px;
 .gallery_index {
     margin: 20px 0;
@@ -43,9 +45,7 @@ $block_height: 90px;
         background-position: center;
         img{
             display: block;
-            border: #d2e1f3;
-            border-style: double;
-
+            border-radius: 18px;
          }
         &:hover{
             .content{
@@ -62,7 +62,6 @@ $block_height: 90px;
            padding: 0px;
            transform: translateY(120%);
             .h2{
-                
                 line-height: 100%;
                 font-size: 30px;
                 font-family: "Inconsolata", sans-serif;
@@ -93,27 +92,19 @@ $block_height: 90px;
     justify-content: center;
     align-items: center;
     img{
-        background-color: #e1ecf9;
         background-size: contain;
-        border-radius: 50%;
-        padding: 13px;
-        width: 380px;
-        height: 380px;
+        border-radius: 18px;
+        width: 400px;
+        height: 420px;
         margin-left: 20px;
         margin-right: 20px;
     }
-}
-
-.pp {
     p{
-    display: flex;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    padding-bottom: 20px;
-    color: rgb(120, 118, 118);
+        font-size: 25px;
     }
 }
+
+
 .piedefoto_index {
     display: flex;
     flex-direction: column;
@@ -132,32 +123,30 @@ $block_height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 .aboutus-title {
-    font-family: 'Caveat', cursive;
-    font-size: 65px;
+    font-family: "sacramento";
+    font-size: 80px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: -20px;
 }
 .aboutus_text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 600px;
+    width: 700px;
     height: 400px;
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Inconsolata", sans-serif;
     text-align:justify;
-    padding: 25px;
 }
 .about_img {
-    margin: 1px;
-    width: 430px;
-    height: 450px;
-    border-radius: 18px;
+    width: 420px;
+    height: 440px;
+    border-radius: 25% 75% 25% 75% / 75% 38% 62% 25%;
 }
 
 .vegan-div{
@@ -166,17 +155,18 @@ $block_height: 90px;
     height: 550px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(236, 241, 241);
+    // background-color: rgb(236, 241, 241);
+    margin-bottom: 80px;
     .vegan-img {
         height: auto;
         display: flex;
         justify-content: end;
         img{
-            width: 430px;
+            width: 400px;
             height: 517px;
             border-radius: 18px;
-            margin-left: 18px;
-            margin-right: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
     } 
 }
@@ -192,16 +182,16 @@ $block_height: 90px;
     // } 
 
 
-.videoIndex {
-    display: flex;
+// .videoIndex {
+//     display: flex;
 
-    justify-content: center;
-    flex-direction: column;
-    width: 550px;
-    height: 520px;
-    .video {
-        border-radius: 10%;
-        margin-top: 40px;
-        padding: 40px;
-    }
-}
+//     justify-content: center;
+//     flex-direction: column;
+//     width: 550px;
+//     height: 520px;
+//     .video {
+//         border-radius: 10%;
+//         margin-top: 40px;
+//         padding: 40px;
+//     }
+// }

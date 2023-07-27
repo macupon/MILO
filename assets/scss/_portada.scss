@@ -1,23 +1,23 @@
 
 .portada{
     width: 100vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 399px;
     position: relative;
-    flex-direction: column;
     top: 0;
+    left: 0;
+    right: 0;
+
     .img_portada {
-        top: 0;
         width: 100vw;
         opacity: 50%;
         position: absolute;
-
+        left: 0;
+        right: 0;
+        top: 0;
     }
     .lorem_div{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
         h1 {
             font-family: "sacramento";
@@ -25,21 +25,22 @@
             font-size: 250px;
             z-index: 20;
             opacity: 90%;
-            margin-top: -10px;
             line-height: 80%;
         }
-        p{
-            font-family: 'Lato', sans-serif;
-            // font-family: "Inconsolata", sans-serif;
-            color: rgb(70, 67, 67);
-            z-index: 20;
-            font-size: 28px;
-            text-align: center;
-        }
+        // p{
+        //     font-family: 'Lato', sans-serif;
+        //     // font-family: "Inconsolata", sans-serif;
+        //     color: rgb(70, 67, 67);
+        //     z-index: 20;
+        //     font-size: 28px;
+        //     text-align: center;
+        // }
     }
 }
 .navbar-index{
     z-index: 1;
+    width: 100vw;
+    background-color: rgba(248, 249, 250, 0.518);
     .face,
     .ig {
         z-index: 30;
