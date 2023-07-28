@@ -1,13 +1,16 @@
-$colorfondo: rgb(240, 248, 255);
+$colorfondo: rgb(226, 239, 250);
 $colorborde: rgb(255, 235, 205);
 
 body {
     top: 0px;
     overflow-x: hidden;
     max-width: 100%;
-    // min-height: 100vh;
     position: relative;
     background-color: $colorfondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main {
     display: flex;
@@ -15,11 +18,12 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 120px;
 }
 
 $block_height: 90px;
 .gallery_index {
+    width: 400px;
+    height: 420px;
     margin: 20px 0;
     width: 100%;
     display: grid;
@@ -96,8 +100,8 @@ $block_height: 90px;
         border-radius: 18px;
         width: 400px;
         height: 420px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     p{
         font-size: 25px;
@@ -112,10 +116,19 @@ $block_height: 90px;
     font-family: "Inconsolata", sans-serif;
     font-weight: lighter;
     color: rgb(140, 138, 138);
+    overflow: hidden;
+    &:hover img {
+        transition: 0.3s;
+    }
+    &:hover img:hover{
+        transform: scale(1.1);
+    }
     p {
         margin-top: 5px;
     }
 }
+
+
 .aboutus_div {
     width: 100vw;
     height: 550px;
@@ -161,6 +174,9 @@ $block_height: 90px;
         height: auto;
         display: flex;
         justify-content: end;
+        & :hover{
+            box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+        }
         img{
             width: 400px;
             height: 517px;

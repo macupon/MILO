@@ -29,6 +29,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 ///////////////////////////////////////////////////////
+.menu_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .titulos_menu {
     text-align: center;
 }
@@ -52,10 +58,14 @@
 .menu_titles {
     display: flex;
     justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
         p{
         font-family: "Lato", sans-serif;
         font-size: 30px;
         text-align: center;
+        margin: 0px;
         }
 }
 .title_sabores_div {
@@ -74,6 +84,9 @@
     position: absolute;
     margin-left: -145px;
     margin-top: 15px;
+    & :hover{
+        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    }
     img {
         height: 390px;
         border-bottom-left-radius: 30%;
@@ -104,7 +117,17 @@
     width: 80px;
     height: 90px;
 }
-
+.ready_div{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
 // #sm:active {
 //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 // }

@@ -18,7 +18,7 @@
     .lorem_div{
         display: flex;
         justify-content: center;
-        align-items: center;
+
         h1 {
             font-family: "sacramento";
             color: rgb(44, 42, 42);
@@ -27,31 +27,21 @@
             opacity: 90%;
             line-height: 80%;
         }
-        // p{
-        //     font-family: 'Lato', sans-serif;
-        //     // font-family: "Inconsolata", sans-serif;
-        //     color: rgb(70, 67, 67);
-        //     z-index: 20;
-        //     font-size: 28px;
-        //     text-align: center;
-        // }
     }
 }
 .navbar-index{
     z-index: 1;
     width: 100vw;
-    background-color: rgba(248, 249, 250, 0.518);
-    .face,
-    .ig {
-        z-index: 30;
-        cursor: pointer;
-        opacity: 85%;
-    }
+    height: 73px;
+    background-color: rgba(248, 249, 250, 0.445);
     .nav-item {
         a{
             font-size: 18px;
             margin: 15px;
             font-family:'Lato', sans-serif;
+        }
+        .ig {
+            margin-right: 45px;
         }
     }
 }
