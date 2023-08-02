@@ -229,17 +229,6 @@ main {
   margin-right: 10px;
 }
 
-.aboutus {
-  display: flex;
-  font-size: 19px;
-  font-family: "Lato", sans-serif;
-  margin-left: 20px;
-}
-
-.aboutus-img {
-  margin: 20px;
-}
-
 .cake_size_div {
   display: flex;
   justify-content: center;
@@ -562,11 +551,6 @@ main {
   font-family: "Lato", sans-serif;
 }
 
-#navbarNav {
-  display: flex;
-  justify-content: start;
-}
-
 .milo_title_div {
   position: absolute;
   display: flex;
@@ -596,6 +580,7 @@ main {
   left: 0;
   right: 0;
   top: 0;
+  pointer-events: none;
 }
 .portada .lorem_div {
   display: flex;
@@ -672,6 +657,110 @@ p {
   transform-origin: 0 var(--radius);
 }
 
+.navbarr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(248, 249, 250, 0.996);
+  color: black;
+  width: 100vw;
+}
+
+.brand-titlee {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 15px;
+  pointer-events: none;
+  font-size: 80px;
+  font-family: "sacramento";
+  opacity: 70%;
+}
+
+.navbar-linkss ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-linkss li {
+  list-style: none;
+  padding: 1rem;
+  display: inline-block;
+}
+.navbar-linkss li a {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.navbar-linkss li a img {
+  border-radius: 30%;
+}
+.navbar-linkss li a:hover {
+  background-color: rgba(224, 236, 248, 0.665);
+  border-radius: 30%;
+}
+
+.toggle-buttonn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-buttonn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 40px;
+}
+
+@media (max-width: 700px) {
+  .toggle-buttonn {
+    margin-top: 17px;
+    margin-right: 10px;
+    display: flex;
+  }
+  .navbarr {
+    flex-direction: column;
+    align-items: center;
+  }
+  .brand-titlee {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative;
+  }
+  .navbar-linkss {
+    display: none;
+    width: 100%;
+    background-color: rgba(182, 210, 239, 0.665);
+  }
+  .navbar-linkss ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-linkss li {
+    text-align: center;
+  }
+  .navbar-linkss li a {
+    padding: 0.5rem 1rem;
+    margin-right: 0px;
+  }
+  .navbar-linkss li a:hover {
+    background-color: rgba(27, 35, 42, 0.342);
+    border-radius: 0%;
+    transition: all 0.9s ease;
+  }
+  .navbar-linkss.active {
+    display: flex;
+    justify-content: center;
+  }
+}
 @font-face {
   font-family: "Gambarino-Regular";
   src: url("../fonts/Gambarino-Regular.ttf") format("truetype");

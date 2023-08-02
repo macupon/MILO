@@ -1,0 +1,113 @@
+.navbarr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(248, 249, 250, 0.996);
+    color: black;
+    width: 100vw;
+}
+
+.brand-titlee{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 15px;
+    pointer-events: none;
+    font-size: 80px;
+    font-family: 'sacramento';
+    opacity: 70%;
+}
+
+.navbar-linkss{ 
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+    li{
+        list-style: none;
+        padding: 1rem;
+        display: inline-block;
+        a {
+            font-family:'Lato', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            display: block;
+            img{
+                border-radius: 30%;
+            }
+    }
+    & a:hover{
+        background-color: rgba(224, 236, 248, 0.665);
+        border-radius: 30%;
+    }
+    }
+}
+
+// // BURGUER BUTTON
+
+.toggle-buttonn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width:700px){
+    .toggle-buttonn{
+        margin-top: 17px;
+        margin-right: 10px;
+        display: flex;
+    }
+    .navbarr{
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand-titlee {
+        margin-left: 0px;
+        margin-top: 0px;
+        position: relative;
+    }
+
+    .navbar-linkss{
+        display: none;
+        width: 100%;
+        background-color: rgba(182, 210, 239, 0.665);
+        ul{
+            flex-direction: column;
+            width: 100%;
+        }
+        li{
+            text-align: center;
+            a{
+                padding: .5rem 1rem;
+                margin-right: 0px;
+            }
+            & a:hover{
+                background-color: rgba(27, 35, 42, 0.342);
+                border-radius: 0%;
+                transition: all .9s ease;
+            }
+        }
+    }
+    .navbar-linkss.active {
+        display: flex;
+        justify-content: center;
+    }
+//     // .toggle-buttonn.active ~ .navbar-linkss.active {
+//     //     transition: all .9s ease;
+//     // }
+}
+
