@@ -1,0 +1,33 @@
+@media (max-width:480px){
+    .titulos h2 {
+        text-align: center;
+        font-size: 40px;
+        margin: 30px;
+    }
+    h2.top{
+        margin-top: 0;
+    }
+    
+    .pp {
+        p{
+        text-align: center;
+        font-size: 20px;
+        flex-wrap: wrap;
+        margin: 0px;
+        }
+    }
+    .menu_titles {
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        text-align: center;
+            p{
+            font-size: 20px;
+            text-align: center;
+            }
+    }
+    
+}
+
