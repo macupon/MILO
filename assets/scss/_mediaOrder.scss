@@ -9,62 +9,37 @@
         scroll-behavior: smooth;
     } 
     .cake_size_flex{
-        // width: 100%;
-        // height: auto;
-        // display: flex;
-        // justify-content: left;
-        // overflow: auto;
-        // position: relative;
-        // scroll-behavior: smooth;
         .size_cake{
             height: 300px;
             width: 280px;
             margin: 5px;
         }
     }
-    .sponge_div_div {
-        margin-left: 0px;
-        margin-bottom: 0px;
-        height: 100px;
-        width: 90vw;
-        height: auto;
+    .menu_div{
+        display: none;
     }
-    .sponge_div {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-width: 2px;
-    }
-    .sabores_div {
-        margin-left: 0px;
+    
+    .flavors_list{
         display: flex;
-        font-size: 15px;
-    }
-    .img_card_menu {
-        img {
-            display: none;
-        }
-    }
-    .icon_text{
-        display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0px 5px 0px 5px;
-        p{
-            font-size: 10px;
-            margin-top: 5px;
+        background-color: #d5e3f6;
+        border-radius: 10px;
+        width: 90vw;
+        padding: 0px;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+        ul{
+            margin-top: 15px;
+            padding:0px;
         }
-        img{
-            width: 20px;
-            height: 90px;
+        li{
+            text-align: center;
+            list-style: none;
+            font-family: "Lato", sans-serif;
         }
-    }
-
-    .icon_flavor {
-        opacity: 60%;
-        width: 80px;
-        height: 90px;
     }
     .ready_div{
         width: 100vw;
@@ -73,8 +48,6 @@
         p {
             text-align: center;
             margin-bottom: 40px;
-
         }
     }
-
 }

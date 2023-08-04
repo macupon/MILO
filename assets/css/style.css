@@ -25,13 +25,18 @@ h2.top {
   margin-top: 0;
 }
 
-.pp p {
+.pp {
   display: flex;
-  justify-content: center;
   font-family: "Lato", sans-serif;
   font-size: 25px;
   color: rgb(120, 118, 118);
   margin-bottom: 15px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 1; /* Permitimos que el texto se repliegue cuando excede el contenedor */
+  min-width: 0;
 }
 
 footer {
@@ -124,6 +129,9 @@ main {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+}
+.gallery_index .block_index p {
+  display: none;
 }
 .gallery_index .block_index img {
   display: block;
@@ -291,6 +299,10 @@ main {
 
 .size_cake_shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.flavors_list {
+  display: none;
 }
 
 .menu_div {
@@ -599,6 +611,9 @@ main {
   left: 0;
   right: 0;
 }
+.portada .miloDisplayNone {
+  display: none;
+}
 .portada .img_portada {
   width: 100vw;
   opacity: 50%;
@@ -707,46 +722,30 @@ p {
     width: 280px;
     margin: 5px;
   }
-  .sponge_div_div {
-    margin-left: 0px;
-    margin-bottom: 0px;
-    height: 100px;
-    width: 90vw;
-    height: auto;
-  }
-  .sponge_div {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-width: 2px;
-  }
-  .sabores_div {
-    margin-left: 0px;
-    display: flex;
-    font-size: 15px;
-  }
-  .img_card_menu img {
+  .menu_div {
     display: none;
   }
-  .icon_text {
+  .flavors_list {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0px 5px 0px 5px;
+    background-color: #d5e3f6;
+    border-radius: 10px;
+    width: 90vw;
+    padding: 0px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
   }
-  .icon_text p {
-    font-size: 10px;
-    margin-top: 5px;
+  .flavors_list ul {
+    margin-top: 15px;
+    padding: 0px;
   }
-  .icon_text img {
-    width: 20px;
-    height: 90px;
-  }
-  .icon_flavor {
-    opacity: 60%;
-    width: 80px;
-    height: 90px;
+  .flavors_list li {
+    text-align: center;
+    list-style: none;
+    font-family: "Lato", sans-serif;
   }
   .ready_div {
     width: 100vw;
@@ -756,6 +755,49 @@ p {
   .ready_div p {
     text-align: center;
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .portada {
+    height: auto;
+  }
+  .portada .miloDisplayNone {
+    display: flex;
+  }
+  .img_portada {
+    display: none;
+  }
+  .lorem_div h1 {
+    display: none;
+  }
+  .titulos h2.top {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .gallery_index {
+    height: 180px;
+    grid-gap: 5px;
+    margin: 0;
+    overflow: visible;
+    grid-template-areas: "a a b b c c" "a a b b c c";
+  }
+  .gallery_index .block_index img {
+    width: 115px;
+    height: 150px;
+    display: block;
+    margin-top: 15px;
+  }
+  .gallery_index .block_index p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 15px;
+    color: rgb(140, 138, 138);
+    text-align: center;
+  }
+  .gallery_index .block_index:hover .content {
+    display: none;
   }
 }
 .navbarr {
@@ -872,10 +914,13 @@ p {
     margin-top: 0;
   }
   .pp p {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
     text-align: center;
     font-size: 20px;
     flex-wrap: wrap;
-    margin: 0px;
   }
   .menu_titles {
     display: flex;
@@ -888,6 +933,10 @@ p {
   .menu_titles p {
     font-size: 20px;
     text-align: center;
+  }
+  .menu_titles .subTitle p {
+    font-size: 15px;
+    color: rgb(70, 67, 67);
   }
 }
 @font-face {

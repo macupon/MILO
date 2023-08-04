@@ -20,6 +20,7 @@ main {
     position: relative;
 }
 
+
 $block_height: 90px;
 .gallery_index {
     width: 400px;
@@ -49,6 +50,9 @@ $block_height: 90px;
         overflow: hidden;
         background-size: cover;
         background-position: center;
+        p{
+            display: none;
+        }
         img{
             display: block;
             border-radius: 18px;
@@ -91,8 +95,6 @@ $block_height: 90px;
         }
     }
 }
-
-
 .img_index {
     display: flex;
     justify-content: center;

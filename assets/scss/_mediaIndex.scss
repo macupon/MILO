@@ -1,0 +1,54 @@
+@media (max-width:480px) {
+
+    .portada{
+        height: auto;
+        .miloDisplayNone{
+            display: flex;
+        }
+    }
+    .img_portada{
+        display: none;
+    }
+    .lorem_div h1{
+        display: none;
+    }    
+    .titulos{
+        h2.top{
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    }
+    $block_height: 90px;
+    .gallery_index {
+    height: 180px;
+    grid-gap: 5px;
+    margin: 0;
+    overflow: visible;
+    grid-template-areas:
+    "a a b b c c"
+    "a a b b c c";
+    .block_index {
+        img{
+            width: 115px;
+            height: 150px;
+            display: block;
+            margin-top: 15px;
+         }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inconsolata", sans-serif;
+            font-size: 15px;
+            color: rgb(140, 138, 138);
+            text-align: center;
+            }
+        &:hover{
+                .content{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
