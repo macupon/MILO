@@ -67,7 +67,7 @@
 
 @media (max-width:700px){
     .toggle-buttonn{
-        margin-top: 17px;
+        margin-top: 37px;
         margin-right: 10px;
         display: flex;
     }
@@ -96,7 +96,7 @@
                 margin-right: 0px;
             }
             & a:hover{
-                background-color: rgba(27, 35, 42, 0.342);
+                background-color: rgba(129, 166, 199, 0.342);
                 border-radius: 0%;
                 transition: all .9s ease;
             }
@@ -106,8 +106,5 @@
         display: flex;
         justify-content: center;
     }
-//     // .toggle-buttonn.active ~ .navbar-linkss.active {
-//     //     transition: all .9s ease;
-//     // }
 }
 

@@ -44,3 +44,10 @@ p {
     font-size: 40px;
 	transform-origin: 0 var(--radius);
 }
+
+
+@media (max-width:1024px) {
+	.circle {
+		display: none;
+	}
+}

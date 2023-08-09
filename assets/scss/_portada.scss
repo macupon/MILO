@@ -1,34 +1,29 @@
-
 .portada{
     width: 100vw;
-    height: 399px;
+    height: 299px;
     position: relative;
     top: 0;
-    left: 0;
-    right: 0;
     .miloDisplayNone{
         display: none;
     }
     .img_portada {
         width: 100vw;
+        height: 350px;
         opacity: 50%;
         position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
         pointer-events: none;
     }
     .lorem_div{
         display: flex;
         justify-content: center;
-
+        align-items: center;
         h1 {
             font-family: "sacramento";
             color: rgb(44, 42, 42);
             font-size: 250px;
             z-index: 20;
             opacity: 90%;
-            line-height: 80%;
+            line-height: 100%;
         }
     }
 }
@@ -50,3 +45,13 @@
 }
 
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px)  {
+
+    .navbar-index{
+        .nav-item {
+            a{
+                margin-top: 25px;
+            }
+        }
+    }
+}

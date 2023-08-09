@@ -19,6 +19,7 @@
 h2 {
   margin-top: 100px;
   margin-bottom: 15px;
+  color: rgb(70, 67, 67);
 }
 
 h2.top {
@@ -34,7 +35,7 @@ h2.top {
   flex-wrap: wrap;
   overflow: hidden;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   flex-shrink: 1; /* Permitimos que el texto se repliegue cuando excede el contenedor */
   min-width: 0;
 }
@@ -171,12 +172,12 @@ main {
   grid-area: c;
 }
 
-.img_index {
+.img_index_div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.img_index img {
+.img_index_div .index-img img {
   background-size: contain;
   border-radius: 18px;
   width: 400px;
@@ -184,11 +185,8 @@ main {
   margin-left: 10px;
   margin-right: 10px;
 }
-.img_index p {
+.img_index_div .index-img p {
   font-size: 25px;
-}
-
-.piedefoto_index {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,15 +194,31 @@ main {
   font-weight: lighter;
   color: rgb(140, 138, 138);
   overflow: hidden;
-}
-.piedefoto_index:hover img {
-  transition: 0.3s;
-}
-.piedefoto_index:hover img:hover {
-  transform: scale(1.1);
-}
-.piedefoto_index p {
   margin-top: 5px;
+}
+
+.vegan_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.vegan_div .vegan-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vegan-img :hover {
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+.vegan-img img {
+  width: 400px;
+  height: 517px;
+  border-radius: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .aboutus_div {
@@ -243,38 +257,13 @@ main {
   border-radius: 25% 75% 25% 75%/75% 38% 62% 25%;
 }
 
-.vegan-div {
-  display: flex;
-  width: 100vw;
-  height: 550px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-.vegan-div .vegan-img {
-  height: auto;
-  display: flex;
-  justify-content: end;
-}
-.vegan-div .vegan-img :hover {
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-}
-.vegan-div .vegan-img img {
-  width: 400px;
-  height: 517px;
-  border-radius: 18px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 .cake_size_div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
-
-.cake_size_flex {
+.cake_size_div .cake_size_flex {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,8 +274,7 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
-
-.size_cake {
+.cake_size_flex img {
   box-shadow: none;
   width: 370px;
   height: 450px;
@@ -605,27 +593,24 @@ main {
 
 .portada {
   width: 100vw;
-  height: 399px;
+  height: 299px;
   position: relative;
   top: 0;
-  left: 0;
-  right: 0;
 }
 .portada .miloDisplayNone {
   display: none;
 }
 .portada .img_portada {
   width: 100vw;
+  height: 350px;
   opacity: 50%;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
   pointer-events: none;
 }
 .portada .lorem_div {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .portada .lorem_div h1 {
   font-family: "sacramento";
@@ -633,7 +618,7 @@ main {
   font-size: 250px;
   z-index: 20;
   opacity: 90%;
-  line-height: 80%;
+  line-height: 100%;
 }
 
 .navbar-index {
@@ -651,6 +636,11 @@ main {
   margin-right: 45px;
 }
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .navbar-index .nav-item a {
+    margin-top: 25px;
+  }
+}
 :root {
   --radius: 33vmin;
   --frame-size: calc(var(--radius) / 3);
@@ -698,6 +688,11 @@ p {
   transform-origin: 0 var(--radius);
 }
 
+@media (max-width: 1024px) {
+  .circle {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: repeat(4, auto);
@@ -705,6 +700,15 @@ p {
     justify-content: center;
     margin-bottom: 20px;
     grid-template-areas: "a a a a" "b b b b" "c c c c" "d d d d" "e e e e" "f f f f" "g g g g" "h h h h" "i i i i" "j j j j" "k k k k" "l l l l" "m m m m" "n n n n" "o o o o" "p p p p" "q q q q" "r r r r";
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(8, auto);
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    margin-bottom: 20px;
+    grid-template-areas: "a a a a  b b b b" "a a a a  b b b b" "a a a a  b b b b" "c c c c  d d d d" "c c c c  d d d d" "c c c c  d d d d" "e e e e  f f f f" "e e e e  f f f f" "e e e e  f f f f" "g g g g  h h h h" "g g g g  h h h h" "g g g g  h h h h" "i i i i  j j j j" "i i i i  j j j j" "i i i i  j j j j" "k k k k  l l l l" "k k k k  l l l l" "k k k k  l l l l" "m m m m  n n n n" "m m m m  n n n n" "m m m m  n n n n" "o o o o  p p p p" "o o o o  p p p p" "o o o o  p p p p" "q q q q  r r r r" "q q q q  r r r r" "q q q q  r r r r";
   }
 }
 @media (max-width: 480px) {
@@ -717,7 +721,7 @@ p {
     position: relative;
     scroll-behavior: smooth;
   }
-  .cake_size_flex .size_cake {
+  .cake_size_flex img {
     height: 300px;
     width: 280px;
     margin: 5px;
@@ -799,6 +803,148 @@ p {
   .gallery_index .block_index:hover .content {
     display: none;
   }
+  .img_index_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    margin-bottom: -60px;
+  }
+  .img_index_div .index-img img {
+    height: 300px;
+    width: 280px;
+    margin: 5px;
+  }
+  .img_index_div .index-img p {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .vegan_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    margin-bottom: -60px;
+  }
+  .vegan_div .vegan-img img {
+    height: 300px;
+    width: 280px;
+    margin: 5px;
+  }
+  .aboutus_div {
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .aboutus-title {
+    font-size: 40px;
+  }
+  .aboutus_text {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-align: left;
+    margin: 20px 10px -50px 10px;
+    word-wrap: break-word;
+  }
+  .about_img {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 230px;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .gallery_index {
+    height: auto;
+    grid-gap: 5px;
+    margin: 0;
+    overflow: visible;
+    grid-template-areas: "a a b b c c" "a a b b c c" "a a b b c c" "a a b b c c";
+  }
+  .gallery_index .block_index img {
+    width: 250px;
+    height: 280px;
+    margin-top: 15px;
+  }
+  .gallery_index .block_index p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 15px;
+    color: rgb(140, 138, 138);
+    text-align: center;
+  }
+  .gallery_index .block_index:hover .content {
+    display: none;
+  }
+  .img_index_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    margin-bottom: -60px;
+  }
+  .img_index_div .index-img img {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+  }
+  .img_index_div .index-img p {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .vegan_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    margin-bottom: -60px;
+  }
+  .vegan_div .vegan-img img {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+  }
+  .aboutus_div {
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .aboutus-title {
+    font-size: 40px;
+  }
+  .aboutus_text {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-align: left;
+    margin: 20px 10px -50px 10px;
+    word-wrap: break-word;
+  }
+  .about_img {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 230px;
+  }
 }
 .navbarr {
   display: flex;
@@ -865,7 +1011,7 @@ p {
 
 @media (max-width: 700px) {
   .toggle-buttonn {
-    margin-top: 17px;
+    margin-top: 37px;
     margin-right: 10px;
     display: flex;
   }
@@ -895,7 +1041,7 @@ p {
     margin-right: 0px;
   }
   .navbar-linkss li a:hover {
-    background-color: rgba(27, 35, 42, 0.342);
+    background-color: rgba(129, 166, 199, 0.342);
     border-radius: 0%;
     transition: all 0.9s ease;
   }
@@ -908,7 +1054,8 @@ p {
   .titulos h2 {
     text-align: center;
     font-size: 40px;
-    margin: 30px;
+    margin-bottom: 10px;
+    margin-top: 40px;
   }
   h2.top {
     margin-top: 0;
@@ -918,9 +1065,57 @@ p {
     justify-content: center;
     width: auto;
     height: auto;
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
+    font-size: 18px;
     flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .vegan-title {
+    margin-top: 40px;
+  }
+  .menu_titles {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    text-align: center;
+  }
+  .menu_titles p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .menu_titles .subTitle p {
+    font-size: 15px;
+    color: rgb(70, 67, 67);
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .titulos h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  h2.top {
+    margin-top: 100px;
+  }
+  .pp p {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .vegan-title {
+    margin-top: 100px;
   }
   .menu_titles {
     display: flex;
