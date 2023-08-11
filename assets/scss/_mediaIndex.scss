@@ -59,7 +59,7 @@
         overflow: auto;
         position: relative;
         scroll-behavior: smooth;
-        margin-bottom: -60px;
+        margin-bottom: -50px;
         .index-img {
             img{
                 height: 300px;
@@ -67,7 +67,7 @@
                 margin: 5px;
             }
             p{
-                font-size: 20px;
+                font-size: 12px;
                 margin-bottom: 0px;
             }
         }
@@ -99,8 +99,7 @@
         height: auto;
         flex-direction: column-reverse;
         justify-content:center;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin: 50px 10px 10px 10px;
     }
     .aboutus-title {
         font-size: 40px;
@@ -110,13 +109,13 @@
         height: auto;
         font-size: 15px;
         text-align: left;
-        margin: 20px 10px -50px 10px;
+        margin: 20px 20px -50px 20px;
         word-wrap: break-word;
 
     }
     .about_img {
-        margin-top: 80px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
         width: 220px;
         height: 230px;
     }
@@ -208,7 +207,7 @@
         flex-direction: column-reverse;
         justify-content:center;
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 50px;
     }
     .aboutus-title {
         font-size: 40px;
@@ -218,12 +217,12 @@
         height: auto;
         font-size: 15px;
         text-align: left;
-        margin: 20px 10px -50px 10px;
+        margin: 20px 25px -50px 25px;
         word-wrap: break-word;
 
     }
     .about_img {
-        margin-top: 80px;
+        margin-top: 20px;
         margin-bottom: 20px;
         width: 220px;
         height: 230px;

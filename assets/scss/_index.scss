@@ -18,6 +18,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -166,6 +167,7 @@ $block_height: 90px;
     font-size: 80px;
     text-align: center;
     margin-bottom: -20px;
+    margin-top: 40px;
 }
 .aboutus_text {
     display: flex;
@@ -177,6 +179,8 @@ $block_height: 90px;
     font-size: 18px;
     font-family: "Inconsolata", sans-serif;
     text-align:justify;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .about_img {
     width: 420px;
