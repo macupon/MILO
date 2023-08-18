@@ -1,5 +1,5 @@
 footer {
-    margin-top: 90px;
+    margin-top: 30px;
     height: auto;
     width: 100vw;
     padding-top: 15px;
@@ -24,14 +24,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-        li {
+    padding-left: 0px;
+    li {
         margin: 0 10px;
-        img {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-        }
+    img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
     }
+}
 }
 
 .portada1 {
